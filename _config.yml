@@ -1,0 +1,22 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: Cinegy Open
+email: open@cinegy.com
+description: > # this means to ignore newlines until "baseurl:"
+  Welcome to Cinegy Open, the location to find information about Cinegy products, 
+  the technology behind these products as well as the location of the 
+  Cinegy Open Tools - a set of tools made by Cinegy to help make the 
+  transition to IT-based broadcasting just that little bit easier...
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://jekyll.workspace.cinegy.com" # the base hostname & protocol for your site
+twitter_username: cinegyopen
+github_username:  cinegyopen
+
+# Build settings
+markdown: kramdown
