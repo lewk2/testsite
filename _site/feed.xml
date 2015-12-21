@@ -6,9 +6,61 @@
 </description>
     <link>http://jekyll.workspace.cinegy.com/</link>
     <atom:link href="http://jekyll.workspace.cinegy.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 10 Dec 2015 23:41:56 +0000</pubDate>
-    <lastBuildDate>Thu, 10 Dec 2015 23:41:56 +0000</lastBuildDate>
+    <pubDate>Mon, 21 Dec 2015 16:01:56 +0000</pubDate>
+    <lastBuildDate>Mon, 21 Dec 2015 16:01:56 +0000</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
+    
+      <item>
+        <title>Another post!</title>
+        <description>&lt;p&gt;This is the another post within the Open portal, now being used with Git to pull changes.&lt;/p&gt;
+
+&lt;p&gt;Incidentally, this portal is built using &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt;, a really neat way to build fast websites.&lt;/p&gt;
+
+&lt;div class=&quot;note info&quot;&gt;
+  &lt;h5&gt;Built with Jekyll&lt;/h5&gt;
+  &lt;p&gt;
+    The site was build using docker, and this post was written with `nano` and then the site built and launched with `jekyll server`.
+  &lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;I’m really interested in showing a code snippet, so here is hopefully some PowerShell:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-powershell&quot; data-lang=&quot;powershell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$port&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;new-Object &lt;/span&gt;System.IO.Ports.SerialPort COM5,115200,None,8,one
+&lt;span class=&quot;nv&quot;&gt;$port&lt;/span&gt;.Close&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt;;
+&lt;span class=&quot;nv&quot;&gt;$port&lt;/span&gt;.Open&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt;;
+&lt;span class=&quot;nv&quot;&gt;$path&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;Split-Path&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$MyInvocation&lt;/span&gt;.MyCommand.Path
+
+&lt;span class=&quot;k&quot;&gt;while&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$true&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nv&quot;&gt;$line&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$port&lt;/span&gt;.ReadLine&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt;;
+    &lt;span class=&quot;nb&quot;&gt;Write-Host&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$line&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$line&lt;/span&gt; -like &lt;span class=&quot;s2&quot;&gt;&quot;BUT1*&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; 
+    &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;nb&quot;&gt;Write-Host&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Starting Type Scene&quot;&lt;/span&gt;
+        &lt;span class=&quot;nb&quot;&gt;invoke-expression&lt;/span&gt; -Command &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$path&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\D&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;ispTypeOnAir.ps1&quot;&lt;/span&gt;   
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt; 
+    
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$line&lt;/span&gt; -like &lt;span class=&quot;s2&quot;&gt;&quot;BUT4*&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; 
+    &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;nb&quot;&gt;Write-Host&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Starting Cued Item&quot;&lt;/span&gt;
+        &lt;span class=&quot;nb&quot;&gt;invoke-expression&lt;/span&gt; -Command &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$path&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\S&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;tartCuedOnAir.ps1&quot;&lt;/span&gt;   
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt; 
+
+    
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+</description>
+        <pubDate>Fri, 11 Dec 2015 17:16:16 +0000</pubDate>
+        <link>http://jekyll.workspace.cinegy.com/open/launch/2015/12/11/second-post.html</link>
+        <guid isPermaLink="true">http://jekyll.workspace.cinegy.com/open/launch/2015/12/11/second-post.html</guid>
+        
+        
+        <category>open</category>
+        
+        <category>launch</category>
+        
+      </item>
     
       <item>
         <title>Welcome to Cinegy Open!</title>
